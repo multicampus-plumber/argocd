@@ -22,10 +22,11 @@ spec:
         name: nginx
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+          limits:
+            cpu: 500m
       imagePullSecrets:
       - name: ecr-secret
-      resources:
-        requests:
-          cpu: 100m
-        limits:
-          cpu: 500m
+
