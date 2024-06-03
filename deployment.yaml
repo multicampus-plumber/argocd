@@ -24,3 +24,8 @@ spec:
         - containerPort: 80
       imagePullSecrets:
       - name: ecr-secret
+      resources:
+        requests:
+          cpu: 100m
+        limits:
+          cpu: 500m
