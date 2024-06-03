@@ -6,7 +6,6 @@ metadata:
     app: demo-nginx
   name: demo-nginx
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: demo-nginx
